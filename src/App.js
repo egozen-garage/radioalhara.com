@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
-
+import Chat from './components/chat/Chat'
+import Player from './components/player/Player';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           Learn React
         </a>
       </header> */}
-
-      <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-discussion="alharachannel/5" data-comments-limit="5" data-color="343638" data-dark-color="FFFFFF"></script>
+      <div id="head"></div>
+      <Player/>
+      <Chat />
 
     </div>
   );
