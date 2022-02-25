@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
 import './App.css';
+import VideoBackground from './components/background/VideoBackground';
 import Chat from './components/chat/Chat'
 import Player from './components/player/Player';
 
@@ -21,6 +22,7 @@ function App() {
         </a>
       </header> */}
       <div id="head"></div>
+      <VideoBackground/>
       <Player/>
       <Chat />
 

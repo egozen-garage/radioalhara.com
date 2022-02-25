@@ -1,0 +1,51 @@
+body{
+    /* background-color: blueviolet; */
+    /* background-image: url("./img/defaultBG.jpg"); */
+    z-index: -1;
+    background: url("https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1");
+}
+
+#reactVideoPlayerParent{
+    z-index: -999;
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+#reactVideoPlayerCoverUp{
+    z-index: -999;
+    /* background:rgba(255, 0, 0, 0.39); */
+    position:fixed;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+#reactVideoPlayerComponent{
+    z-index: -1000;
+    height: 100% !important;
+    width: 100% !important;
+    background:black;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+}
+
+#reactVideoPlayerComponent div{
+    height: 100% !important;
+    width: auto !important;
+}
+#reactVideoPlayerComponent div iframe{
+    height: 115vh !important;
+    width: 115vw !important;
+    margin-top: -10vh;
+    margin-left: -10vh;
+}
+
+
+
+
+
