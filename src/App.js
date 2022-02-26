@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import './App.css';
-import VideoBackground from './components/background/VideoBackground';
+import Background from './components/background/VideoBackground';
 import Chat from './components/chat/Chat'
 import Player from './components/player/Player';
 
 function App() {
+
+  
   return (
     <div className="App">
       {/* <header className="App-header">
@@ -22,9 +24,9 @@ function App() {
         </a>
       </header> */}
       <div id="head"></div>
-      <VideoBackground/>
-      <Player/>
-      <Chat />
+      <Background medium="video"/>
+      <Player radioJarID="78cxy6wkxtzuv"/>
+      <Chat telegramChatID="alharachannel/5"/>
 
     </div>
   );

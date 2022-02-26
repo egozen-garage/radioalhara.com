@@ -2,13 +2,12 @@
 import React, { useEffect } from 'react';
 import './player.css';
 
-
-var rjID = "'78cxy6wkxtzuv'";
+export default function Player(props) {
 
 const playerJS = `
     function runPlayer(){
         rjq('#rjp-radiojar-player').radiojar('player', {
-            "streamName": ${rjID}, // HEY HEY HEY, PASTE HERE YOUR RADIO JAR STREAM CODE <3
+            "streamName": "${props.radioJarID}", 
             "enableUpdates": true,
             "defaultImage": "img/radio-alhara-logo.svg",
             "autoplay":false
@@ -38,11 +37,17 @@ const playerJS = `
     runPlayer();
 `;
 
-const playerHTML = (
-    // <div id="playerContainer">
-    
-    // </div>
-    <div id="player" className="col-lg-12">
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.innerHTML = playerJS;
+        document.body.appendChild(script);
+        return () => { 
+            document.body.removeChild(script); 
+        }
+    }, [])
+
+    return (
+        <div id="player" className="col-lg-12">
                 <div id="rj-cover">
                     <img id="" src="/img/radio-alhara-logo.svg" style={{ width: "100px" }} alt="" />
                 </div>
@@ -77,14 +82,12 @@ const playerHTML = (
                                 <div className="jp-volume-bar-value"></div>
                             </div>
                         </div>
-                
                         <div className="jp-no-solution">
                             <span>Update Required</span>
                             Use Firefox.
                         </div>
                     </div>
                 </div>
-
                 {/* <div className="rjp-player-container">
                     <div id="volume_controll" className="jp-volume-bar-wrapper">
                         <div className="jp-volume-bar">
@@ -95,29 +98,5 @@ const playerHTML = (
             </div>
         </div>
     </div>
-)
-
-function Player() {
-
-    useEffect(() => {
-        const script = document.createElement('script');
-        script.innerHTML = playerJS;
-        document.body.appendChild(script);
-        return () => { 
-            document.body.removeChild(script); 
-        }
-    }, [])
-
-    //     console.log("script2 mounted");    
-
-    return (
-        playerHTML
     )
 }
-
-
-
-
-
-
-export default Player
