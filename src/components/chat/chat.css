@@ -15,3 +15,8 @@ body iframe{
     display:block;position:absolute;
     z-index: 100 !important;
 }
+
+body.dark.body_widget_discussion{
+    background: rgba(0, 0, 0, 0) !important;
+
+}
