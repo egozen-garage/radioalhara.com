@@ -166,7 +166,7 @@ a:hover {
   clear: both;
 }
 .hide-text {
-  font: 0/0 a;
+  /* font: 0/0 a; */
   color: transparent;
   text-shadow: none;
   background-color: transparent;
@@ -766,7 +766,7 @@ margin-left: 60px;
 }
 
 
-//Play animation
+/* Play animation */
 
 
 @-webkit-keyframes spin {
