@@ -44,7 +44,7 @@ const playerJS = `
         return () => { 
             document.body.removeChild(script); 
         }
-    }, [])
+    }, [playerJS])
 
     return (
         <div id="player" className="col-lg-12">
