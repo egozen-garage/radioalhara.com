@@ -2,13 +2,13 @@ iframe > html > body.body_widget_discussion {
     background: rgba(0, 0, 0, 0) !important;
 }
 
-#telegram-discussion-alharachannel-5-1{
+/* input[id^='telegram-discussion']{ */
+#telegram-discussion-radioalhara-54-1{
     width: 500px;
     z-index: 100;
     border-radius: 15px;
     margin-top: -70px;
     margin-left: 140px !important;
-
 }
 
 body iframe{

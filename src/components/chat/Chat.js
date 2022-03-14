@@ -5,13 +5,23 @@ import LoadTelegramScript from '../scripts/LoadTelegramScript'
 
 // const telegramChatID = "alharachannel/5";
 
+// const iframeStyle = `
+//   #telegram-discussion-radioalhara-${telegramChatID}-1{
+//     width: 500px;
+//     z-index: 100;
+//     border-radius: 15px;
+//     margin-top: -70px;
+//     margin-left: 140px !important;
+//   }
+// `;
+
 // https://betterprogramming.pub/loading-third-party-scripts-dynamically-in-reactjs-458c41a7013d
 const Chat = (props) => {
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
         LoadTelegramScript(() => {
             setLoaded(true);
-          },props.telegramChatID);
+          },"radioalhara/" + props.telegramChatID);
     });
     return ( 
       <div className="telegram-component">

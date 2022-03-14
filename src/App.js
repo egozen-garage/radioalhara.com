@@ -26,7 +26,7 @@ function App() {
       <div id="head"></div>
       <Background medium="video"/>
       <Player radioJarID="78cxy6wkxtzuv"/>
-      <Chat telegramChatID="alharachannel/5"/>
+      <Chat telegramChatID="54"/>
 
     </div>
   );
