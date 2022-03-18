@@ -48,14 +48,15 @@ const playerJS = `
 
     return (
         <div id="player" className="col-lg-12">
-                <div id="rj-cover">
-                    <img id="" src="/img/radio-alhara-logo.svg" style={{ width: "100px" }} alt="" />
-                </div>
         <div id="rj-player" className="fixed-top">
             <div className="player-v3 player-medium">
                 <div id="player_box" className="info">
                     <div className="rjp-trackinfo-container">
+                        <p id="radioAlhara" className="rjo-radioChannelName">Radio al Hara</p>
                         <p id="trackInfo" className="rjp-info"> </p>
+                    </div>
+                    <div id="rj-cover">
+                            <img id="" src="/img/radio-alhara-logo.svg" style={{ width: "100px" }} alt="" />
                     </div>
                     <div className="rjp-player-container">
                         <div id="rjp-radiojar-player"></div>

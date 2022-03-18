@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import './chat.css';
-import './telegramStyle.css';
 import LoadTelegramScript from '../scripts/LoadTelegramScript'
 
 // const telegramChatID = "alharachannel/5";

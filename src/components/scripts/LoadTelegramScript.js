@@ -24,3 +24,4 @@ const LoadTelegramScript = (callback,telegramChatID) => {
 }
 
 export default LoadTelegramScript;
+
