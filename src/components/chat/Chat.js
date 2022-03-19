@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import './chat.css';
-import './telegramStyle.css';
 import LoadTelegramScript from '../scripts/LoadTelegramScript'
 
 // const telegramChatID = "alharachannel/5";
@@ -17,12 +16,17 @@ import LoadTelegramScript from '../scripts/LoadTelegramScript'
 
 // https://betterprogramming.pub/loading-third-party-scripts-dynamically-in-reactjs-458c41a7013d
 const Chat = (props) => {
+
+
+
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
         LoadTelegramScript(() => {
             setLoaded(true);
-          },"radioalhara/" + props.telegramChatID);
+          }, props.telegramChatID);
     });
+
+
     return ( 
       <div className="telegram-component">
         {/* {loaded ? < /> : ''} */}

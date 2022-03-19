@@ -1,9 +1,4 @@
-iframe > html > body.body_widget_discussion {
-    background: rgba(0, 0, 0, 0) !important;
-}
-
-/* input[id^='telegram-discussion']{ */
-#telegram-discussion-radioalhara-54-1{
+[id^='telegram-discussion'] {
     width: 500px;
     z-index: 100;
     border-radius: 15px;
@@ -14,9 +9,4 @@ iframe > html > body.body_widget_discussion {
 body iframe{
     display:block;position:absolute;
     z-index: 100 !important;
-}
-
-body.dark.body_widget_discussion{
-    background: rgba(0, 0, 0, 0) !important;
-
 }
