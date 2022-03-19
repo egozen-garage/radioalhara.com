@@ -3,13 +3,20 @@ iframe > html > body.body_widget_discussion {
 }
 
 [id^='telegram-discussion'] {
-    margin-left: var(--globalMarginValue) !important;
+    margin-top: -40px;
+    margin-left: 130px !important;
+    margin-bottom: var(--globalMarginValue);
     width: 35%;
     display: block;
     z-index: 100 !important;
     background-color: transparent; 
-    border: 1px solid white !important;
+    /* border: 1px solid white !important; */
     border-radius: 5px;
+}
+
+#Chat {
+    overflow: scroll;
+    /* padding: var(--globalMarginValue);*/
 }
 
 
@@ -21,5 +28,7 @@ body.dark.body_widget_discussion{
 @media screen and (max-width: 1024px) {
     [id^='telegram-discussion'] {
         width: 75%;
+        margin-left: 90px !important;
+
     }
 }

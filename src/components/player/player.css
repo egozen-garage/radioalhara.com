@@ -44,6 +44,8 @@ button {
 
 #player {
 	direction: ltr;
+  position: sticky;
+  top: 0;
 }
 
 .about {
@@ -708,7 +710,7 @@ ul.icons-ul > li .icon-li {
 
 #rj-player .player-v3.player-medium {
   width: 100%;
-  margin: var(--globalMarginValue) 0px 40px 0px;
+  margin: var(--globalMarginValue) 0px 20px 0px;
 	/* border-bottom: 1px solid; */
 }
 .rjp-player-container {

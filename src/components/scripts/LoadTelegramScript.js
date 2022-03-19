@@ -2,6 +2,7 @@ const LoadTelegramScript = (callback,telegramChatID) => {
     const existingScript = document.getElementById('telegramScript');
 
     if (!existingScript) {
+        // create script to read out iframe
         const script = document.createElement('script');
         script.id = "telegramScript";
         script.src = "https://telegram.org/js/telegram-widget.js?15";
@@ -12,7 +13,7 @@ const LoadTelegramScript = (callback,telegramChatID) => {
         script.dataset.dark = "1";
         script.dataset.darkColor = "FFFFFF";
 
-        document.body.appendChild(script);
+        document.getElementById('Chat').appendChild(script);
         
         script.onload = () => { 
             if (callback) callback();
@@ -20,7 +21,7 @@ const LoadTelegramScript = (callback,telegramChatID) => {
     }
     
     if (existingScript && callback) callback();
-
+    
 }
 
 export default LoadTelegramScript;
