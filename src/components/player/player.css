@@ -34,7 +34,6 @@ button {
   border: 1px solid white;
   background-color: var(--alharablack);
   z-index: 1000 !important;
-  margin-left: var(--globalMarginValue);
 }
 
 /* body{
@@ -45,7 +44,9 @@ button {
 #player {
 	direction: ltr;
   position: sticky;
-  top: 0;
+  top: var(--globalMarginValue);
+  padding-bottom: 20px;
+  padding-right: 0px;
 }
 
 .about {
@@ -134,10 +135,29 @@ a:hover {
 	}
 
 	#rj-player .player-v3.player-medium .info {
-		width: 100% !important;
+		/* width: 80% !important; */
 	}
 	#rj-player .rjp-player-container .jp-volume-bar {
 
+}
+
+@media only screen and (max-width: 667px) {
+  #rj-player .player-v3.player-medium .info {
+		width: auto !important;
+	}
+
+  #player {
+    /* padding-right: var(--globalMarginValue);*/
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #rj-player .player-v3.player-medium .info {
+		/* width: 100% !important; */
+    padding: 0px !important;
+	}
+
+  
 }
 
 #rj-player .rjp-info {
@@ -709,8 +729,8 @@ ul.icons-ul > li .icon-li {
 
 
 #rj-player .player-v3.player-medium {
-  width: 100%;
-  margin: var(--globalMarginValue) 0px 20px 0px;
+  /* width: 100%; */
+  /* margin: var(--globalMarginValue) 0px 20px 0px; */
 	/* border-bottom: 1px solid; */
 }
 .rjp-player-container {
@@ -722,7 +742,7 @@ ul.icons-ul > li .icon-li {
 }
 
 .col-lg-12 {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .fixed-top {
   top: 0;
@@ -730,7 +750,7 @@ ul.icons-ul > li .icon-li {
 }
 
 #rj-player .player-v3.player-medium .info {
-	width: 35%;
+	width: 40%;
 	text-align: left;
 	padding: 18px;
 }
@@ -754,9 +774,7 @@ margin-left: 60px;
 @media screen and (max-width: 1024px) {
 
 #rj-player .player-v3.player-medium .info {
-	width: 75%;
-	padding: 15px;
-  
+	width: 75%;  
 }
 
 }

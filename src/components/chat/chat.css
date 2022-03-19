@@ -4,9 +4,9 @@ iframe > html > body.body_widget_discussion {
 
 [id^='telegram-discussion'] {
     margin-top: -40px;
-    margin-left: 130px !important;
+    margin-left: 52px !important;
     margin-bottom: var(--globalMarginValue);
-    width: 35%;
+    width: 40%;
     display: block;
     z-index: 100 !important;
     background-color: transparent; 
@@ -15,7 +15,7 @@ iframe > html > body.body_widget_discussion {
 }
 
 #Chat {
-    overflow: scroll;
+    overflow: hidden;
     /* padding: var(--globalMarginValue);*/
 }
 
@@ -28,7 +28,19 @@ body.dark.body_widget_discussion{
 @media screen and (max-width: 1024px) {
     [id^='telegram-discussion'] {
         width: 75%;
-        margin-left: 90px !important;
+        margin-left: 47px !important;
+    }
+}
 
+@media screen and (max-width: 667px) {
+    [id^='telegram-discussion'] {
+        width: 100%;
+        margin-left: 0px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    [id^='telegram-discussion'] {
+        margin-bottom: 0px;
     }
 }

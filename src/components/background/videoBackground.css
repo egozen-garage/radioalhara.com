@@ -8,6 +8,8 @@
     right:0px;
     bottom:0px;
     left:0px;
+
+    background-color: #150f14;
 }
 
 .reactVideoPlayerCoverUp{
@@ -26,9 +28,8 @@
     background:black;
     position:absolute;
     top:0px;
-    right:0px;
     bottom:0px;
-    left:0px;
+    overflow: hidden;
 }
 
 .reactVideoPlayerComponent div{
@@ -36,10 +37,24 @@
     width: auto !important;
 }
 .reactVideoPlayerComponent div iframe{
-    height: 115vh !important;
+    /* height: 115vh !important;
     width: 115vw !important;
     margin-top: -10vh;
-    margin-left: -10vh;
+    margin-left: -10vh; */
+
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%; 
+    min-height: 100%; 
+
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 

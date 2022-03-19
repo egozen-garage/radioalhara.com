@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 import './videoBackground.css';
 
 // video testing links
-const privateFile = "http://trust.dialectica-machina.com/video/shuttle_red_light.mp4";
-const youtubeLink = "https://www.youtube.com/watch?v=bhWJF9FlBqM";
+const privateFile = "http://trust.dialectica-machina.com/video/recordat28.gif.mp4";
+const youtubeLink = "https://www.youtube.com/watch?v=O0YYf2Xn7oA&ab_channel=thekinolibrary";
 // vimeo > styling not yet adjusted
 const vimeoLink = "https://vimeo.com/249086569";
 

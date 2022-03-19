@@ -5,10 +5,17 @@
 
 body {
   background-color: black;
+  margin: var(--globalMarginValue);
 }
 
 @media screen and (max-width: 1024px) {
   :root {
     --globalMarginValue: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  :root {
+    --globalMarginValue: 10px;
   }
 }
