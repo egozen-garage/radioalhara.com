@@ -17,12 +17,15 @@ import LoadTelegramScript from '../scripts/LoadTelegramScript'
 // OLD CHAT FUNCTION STAND: 19. März 2020
 // https://betterprogramming.pub/loading-third-party-scripts-dynamically-in-reactjs-458c41a7013d
 /* const Chat = (props) => {
+
     const [loaded, setLoaded] = useState(false);
     useEffect(() => {
         LoadTelegramScript(() => {
             setLoaded(true);
-          },"radioalhara/" + props.telegramChatID);
+          }, props.telegramChatID);
     });
+
+
     return ( 
       <div className="telegram-component">
         {}
