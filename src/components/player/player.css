@@ -47,6 +47,7 @@ button {
   top: var(--globalMarginValue);
   padding-bottom: 20px;
   padding-right: 0px;
+  margin: 14px;
 }
 
 .about {
@@ -154,8 +155,12 @@ a:hover {
 @media only screen and (max-width: 400px) {
   #rj-player .player-v3.player-medium .info {
 		/* width: 100% !important; */
-    padding: 0px !important;
+    /* padding: 0px !important; */
 	}
+
+  #player {
+    padding-bottom: 0px !important;
+  }
 
   
 }

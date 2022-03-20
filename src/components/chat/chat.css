@@ -42,5 +42,7 @@ body.dark.body_widget_discussion{
 @media screen and (max-width: 400px) {
     [id^='telegram-discussion'] {
         margin-bottom: 0px;
+        margin-left: 0px !important;
+        margin-top: -40px;
     }
 }
