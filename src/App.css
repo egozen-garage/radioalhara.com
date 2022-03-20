@@ -1,6 +1,7 @@
 :root {
   --alharablack: black;
   --globalMarginValue: 80px;
+  --contentWrapperWidth: 35%;
 }
 
 body {
@@ -10,7 +11,21 @@ body {
 
 #contentWrapper {
   padding: var(--globalMarginValue) var(--globalMarginValue) 0px var(--globalMarginValue);
+  display: grid;
 }
+
+img {
+  height: auto;
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 1700px) {
+  :root {
+    --contentWrapperWidth: 25%;
+  }
+}
+
 
 @media screen and (max-width: 1024px) {
   :root {

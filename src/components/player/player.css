@@ -45,8 +45,9 @@ button {
 	direction: ltr;
   position: sticky;
   top: var(--globalMarginValue);
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   padding-right: 0px;
+  margin: 14px;
 }
 
 .about {
@@ -154,10 +155,18 @@ a:hover {
 @media only screen and (max-width: 400px) {
   #rj-player .player-v3.player-medium .info {
 		/* width: 100% !important; */
-    padding: 0px !important;
+    /* padding: 0px !important; */
 	}
 
-  
+  #player {
+    padding-bottom: 0px !important;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  #player {
+    display: none;
+  }
 }
 
 #rj-player .rjp-info {
@@ -606,12 +615,26 @@ ul.icons-ul > li .icon-li {
 #rj-player .rjp-player-container .jp-pause {
   color: #ffffff;
   display: block;
-	width: 77px;
-	height: 67px;
   text-align: left;
 	float: left;
-
 }
+
+.jp-play {
+	height: 67px;
+  width: 75px;
+  margin-top: 3px;
+}
+
+.jp-pause {
+  height: auto;
+  width: 78px;
+  margin-left: -3px;
+}
+
+.icon-pause {
+  font-size: 30px;
+}
+
 #rj-player .rjp-player-container .jp-play:active,
 #rj-player .rjp-player-container .jp-pause:active,
 #rj-player .rjp-player-container .jp-play:focus,
@@ -750,7 +773,7 @@ ul.icons-ul > li .icon-li {
 }
 
 #rj-player .player-v3.player-medium .info {
-	width: 40%;
+	width: var(--contentWrapperWidth);
 	text-align: left;
 	padding: 18px;
 }
@@ -808,6 +831,7 @@ margin-left: 60px;
 }
 
 .stroke-solid {
+  height: auto;
   stroke-dashoffset: 300;
   stroke-dasharray: 300;
   -webkit-transition: stroke-dashoffset 1s ease, opacity 1s ease;
@@ -846,7 +870,7 @@ margin-left: 60px;
           transform: translateY(-50%) translateX(-50%);
 	color: #fff;
 	margin-left: 8px;
-
+  height: 75px;
 }
 
 

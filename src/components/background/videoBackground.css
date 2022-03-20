@@ -19,7 +19,7 @@
     height: 100% !important;
     width: 100% !important;
     background:black;
-    position:absolute;
+    position:fixed;
     top:0px;
     bottom:0px;
     overflow: hidden;
@@ -51,8 +51,14 @@
     transform: translate(-50%,-50%);
 }
 
-
-
+#backgroundImage {
+  height: 100%;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 
 

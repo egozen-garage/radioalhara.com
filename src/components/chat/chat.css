@@ -6,12 +6,13 @@ iframe > html > body.body_widget_discussion {
     margin-top: -40px;
     margin-left: 52px !important;
     margin-bottom: var(--globalMarginValue);
-    width: 40%;
+    width: var(--contentWrapperWidth);
     display: block;
     z-index: 100 !important;
     background-color: transparent; 
     /* border: 1px solid white !important; */
     border-radius: 5px;
+    min-width: 300px !important;
 }
 
 #Chat {
@@ -42,5 +43,7 @@ body.dark.body_widget_discussion{
 @media screen and (max-width: 400px) {
     [id^='telegram-discussion'] {
         margin-bottom: 0px;
+        margin-left: 0px !important;
+        margin-top: -40px;
     }
 }
