@@ -15,9 +15,9 @@ export default function RadioChannel() {
   const { slug } = useParams();
 
   // Performing queries
-  // const query = `*[slug.current match "${slug}"] {_id, title, slug, backgroundMedium, videoFile }`
-  // const query = `*[slug.current match "${slug}"]`
-  const query = `*[ _type == "radioChannel" && slug.current match "${slug}" && !(_id in path("drafts.**"))]`
+  // Backup for slug routing:
+  // const query = `*[ _type == "radioChannel" && slug.current match "${slug}" && !(_id in path("drafts.**"))]`
+  const query = `*[ _type == "radioChannel" && slug.current match "palestine" && !(_id in path("drafts.**"))]`
 
   useEffect(() => {
       sanityClient.fetch(query)

@@ -65,8 +65,9 @@ function App() {
             </div> */}
             {/* Route Area */}
             <Routes>
-              <Route element={<AllChannels/>} exact path="/" />
-              <Route element={<RadioChannel/>} path="/:slug" />
+              {/* <Route element={<AllChannels/>} exact path="/" /> */}
+              {/* <Route element={<RadioChannel/>} path="/:slug" /> */}
+              <Route element={<RadioChannel/>} path="/" />
               {/* <Route element={<About/>} path="/about" /> */}
             </Routes>
             {/* Footer Area */}
