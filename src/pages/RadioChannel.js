@@ -31,7 +31,7 @@ export default function RadioChannel() {
             (channelItem) => (
               <Background 
                 channelItem={channelItem} 
-                key={channelItem.backgroundMedium + channelItem._id} 
+                key={"backgroundContainer" + channelItem._id} 
               />
             )
         )}
@@ -40,7 +40,7 @@ export default function RadioChannel() {
               (channelItem) => (
                 <ProgramContainer
                   channelItem={channelItem}
-                  key={channelItem.program.length + channelItem._id}
+                  key={"programContainer" + channelItem._id}
                 />
               )
           )}
@@ -50,7 +50,7 @@ export default function RadioChannel() {
               (channelItem) => (
                 <Player 
                   radioJarID={channelItem.radioJarID} 
-                  key={channelItem.radioJarID + channelItem._id}
+                  key={"playerContainer" + channelItem._id}
                 />               
               )
           )}
@@ -58,7 +58,7 @@ export default function RadioChannel() {
               (channelItem) => (
                 <Chat 
                   telegramChatID={channelItem.telegramDiscussionLink} 
-                  key={channelItem.telegramDiscussionLink + channelItem._id}
+                  key={"chatContainer" + channelItem._id}
                 />
               )
           )}

@@ -25,13 +25,24 @@ const myPortableTextComponents = {
     },
   }
 
-export default function ProgramContainer(props){
+const ProgramText = (channelItem) => {
     return(
         <div className='programContainer'>
-          {/* {props.channelItem.program[0]} */}
-          <PortableText value={props.channelItem.program}
-                        components={myPortableTextComponents}
-/>
+            <PortableText 
+                value={channelItem.channelItem.program}
+                components={myPortableTextComponents}
+            />
         </div>
       )
+}
+const NoProgramText = () => {
+    return <div></div>
+}
+
+export default function ProgramContainer(props){
+    const programIsTrue = props.channelItem.program;
+    if (programIsTrue) {
+        return <ProgramText channelItem={props.channelItem}/>;
+    }
+    return <NoProgramText />;
 }
