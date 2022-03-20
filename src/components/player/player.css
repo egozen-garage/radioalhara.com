@@ -45,7 +45,7 @@ button {
 	direction: ltr;
   position: sticky;
   top: var(--globalMarginValue);
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   padding-right: 0px;
   margin: 14px;
 }
@@ -612,11 +612,18 @@ ul.icons-ul > li .icon-li {
   color: #ffffff;
   display: block;
 	width: 77px;
-	height: 67px;
   text-align: left;
 	float: left;
-
 }
+
+.jp-play {
+	height: 67px;
+}
+
+.jp-pause {
+  height: 0px;
+}
+
 #rj-player .rjp-player-container .jp-play:active,
 #rj-player .rjp-player-container .jp-pause:active,
 #rj-player .rjp-player-container .jp-play:focus,

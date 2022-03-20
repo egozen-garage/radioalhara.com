@@ -19,7 +19,7 @@
     height: 100% !important;
     width: 100% !important;
     background:black;
-    position:absolute;
+    position:fixed;
     top:0px;
     bottom:0px;
     overflow: hidden;
