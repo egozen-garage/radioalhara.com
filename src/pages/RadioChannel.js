@@ -6,6 +6,7 @@ import sanityClient from "../client";
 import Background from '../components/background/VideoBackground';
 import Chat from '../components/chat/Chat';
 import Player from '../components/player/Player';
+import ProgramContainer from '../components/ProgramContainer';
 
 
 
@@ -28,21 +29,40 @@ export default function RadioChannel() {
     <div className="component-RadioChannel">
         {channelTtems && channelTtems.map(
             (channelItem) => (
-              <Background channelItem={channelItem} key={channelItem.backgroundMedium + channelItem._id} />
+              <Background 
+                channelItem={channelItem} 
+                key={channelItem.backgroundMedium + channelItem._id} 
+              />
             )
-         )}
+        )}
+        <div>
+          {channelTtems && channelTtems.map(
+              (channelItem) => (
+                <ProgramContainer
+                  channelItem={channelItem}
+                  key={channelItem.program.length + channelItem._id}
+                />
+              )
+          )}
+        </div>
         <div id="contentWrapper">
-        {channelTtems && channelTtems.map(
-            (channelItem) => (
-                <Player radioJarID={channelItem.radioJarID} key={channelItem.radioJarID + channelItem._id}/>               
-            )
-         )}
-        {channelTtems && channelTtems.map(
-            (channelItem) => (
-              <Chat telegramChatID={channelItem.telegramDiscussionLink} key={channelItem.telegramDiscussionLink + channelItem._id}/>
-            )
-         )}
-         </div>
+          {channelTtems && channelTtems.map(
+              (channelItem) => (
+                <Player 
+                  radioJarID={channelItem.radioJarID} 
+                  key={channelItem.radioJarID + channelItem._id}
+                />               
+              )
+          )}
+          {channelTtems && channelTtems.map(
+              (channelItem) => (
+                <Chat 
+                  telegramChatID={channelItem.telegramDiscussionLink} 
+                  key={channelItem.telegramDiscussionLink + channelItem._id}
+                />
+              )
+          )}
+        </div>
     </div>
   );
 }
