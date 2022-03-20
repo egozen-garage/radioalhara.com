@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { unmountComponentAtNode } from "react-dom";
 
 import sanityClient from "../client";
 // import RadioChannel from "./RadioChannel";
@@ -9,7 +8,8 @@ const AllChannels = () => {
   const [channels, setChannels] = useState(null);
 
   // Performing queries
-  const query = '*[_type == "radioChannel"] {_id, title, slug, backgroundMedium}'
+  // const query = '*[_type == "radioChannel"] {_id, title, slug, backgroundMedium}'
+  const query = '*[ _type == "radioChannel" && !(_id in path("drafts.**"))] {_id, title, slug, backgroundMedium}'
 
   useEffect(() => {
     sanityClient.fetch(query)
