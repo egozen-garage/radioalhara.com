@@ -43,11 +43,6 @@ button {
 
 #player {
 	direction: ltr;
-  position: sticky;
-  top: calc(var(--globalMarginValue) + 15px);
-  /* padding-bottom: 20px; */
-  padding-right: 0px;
-  margin: 14px;
 }
 
 .about {

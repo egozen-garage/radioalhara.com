@@ -35,17 +35,9 @@ export default function RadioChannel() {
               />
             )
         )}
-        <div>
-          {channelTtems && channelTtems.map(
-              (channelItem) => (
-                <ProgramContainer
-                  channelItem={channelItem}
-                  key={channelItem.program.length + channelItem._id}
-                />
-              )
-          )}
-        </div>
+
         <div id="contentWrapper">
+          <div id="playerWrapper">
           {channelTtems && channelTtems.map(
               (channelItem) => (
                 <Player 
@@ -54,6 +46,15 @@ export default function RadioChannel() {
                 />               
               )
           )}
+          {channelTtems && channelTtems.map(
+              (channelItem) => (
+                <ProgramContainer
+                  channelItem={channelItem}
+                  key={channelItem.program.length + channelItem._id}
+                />
+              )
+          )}
+          </div>
           {channelTtems && channelTtems.map(
               (channelItem) => (
                 <Chat 

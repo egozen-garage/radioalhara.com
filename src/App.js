@@ -33,7 +33,7 @@ function App() {
         />
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://reedbarger.com" />
+        <meta property="og:url" content="https://www.radioalhara.net/" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Radio alHara" />
         <meta
@@ -54,7 +54,7 @@ function App() {
         />
         <meta
           name="twitter:image"
-          content={ImageAssets}
+          content= {ImageAssets}
         />
       </MetaTags>
 

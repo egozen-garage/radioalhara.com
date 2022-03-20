@@ -1,4 +1,23 @@
 .programContainer{
-    width: 100%;
+    width: var(--contentWrapperWidth);
     color: white;
+    font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
 }
+
+.programContainer p{
+    padding-left: 90px;
+}
+
+#playerWrapper {
+    position: sticky;
+    top: calc(var(--globalMarginValue) + 15px);
+    /* padding-bottom: 20px; */
+    padding-right: 0px;
+    margin: 14px;
+}
+
+@media only screen and (max-width: 667px) {
+    .programContainer {
+          width: auto !important;
+      }
+    }
