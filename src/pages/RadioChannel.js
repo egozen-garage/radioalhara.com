@@ -48,18 +48,15 @@ export default function RadioChannel() {
 
   return (
     <div className="component-RadioChannel">
-      <div id="head" style={{height: '100px'}}></div>
         {channelTtems && channelTtems.map(
             (channelItem) => (
               <Background channelItem={channelItem} key={channelItem.backgroundMedium + channelItem._id} />
             )
          )}
+        <div id="contentWrapper">
         {channelTtems && channelTtems.map(
             (channelItem) => (
-              <div>
-                called twice ? ? ? 
                 <Player radioJarID={channelItem.radioJarID} key={channelItem.radioJarID + channelItem._id}/>               
-              </div>
             )
          )}
         {channelTtems && channelTtems.map(
@@ -67,6 +64,7 @@ export default function RadioChannel() {
               <Chat telegramChatID={channelItem.telegramDiscussionLink} key={channelItem.telegramDiscussionLink + channelItem._id}/>
             )
          )}
+         </div>
     </div>
   );
 }

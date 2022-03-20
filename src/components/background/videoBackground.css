@@ -15,16 +15,14 @@
 
 
 .backgroundDiv{
-    z-index: -1;
-    /* background-repeat: no-repeat;
-    background-size: 100%; */
-
-    position:fixed;
+    z-index: -1000;
+    height: 100% !important;
+    width: 100% !important;
+    background:black;
+    position:absolute;
     top:0px;
-    right:0px;
     bottom:0px;
-    left:0px;
-
+    overflow: hidden;
     background-color: #150f14;
 }
 
@@ -38,26 +36,6 @@
     left:0px;
 }
 .reactVideoPlayerComponent{
-    z-index: -1000;
-    height: 100% !important;
-    width: 100% !important;
-    background:black;
-    position:absolute;
-    top:0px;
-    bottom:0px;
-    overflow: hidden;
-}
-
-.reactVideoPlayerComponent div{
-    height: 100% !important;
-    width: auto !important;
-}
-.reactVideoPlayerComponent div iframe{
-    /* height: 115vh !important;
-    width: 115vw !important;
-    margin-top: -10vh;
-    margin-left: -10vh; */
-
     /* Make video to at least 100% wide and tall */
     min-width: 100%; 
     min-height: 100%; 
@@ -71,8 +49,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    
 }
+
+
 
 
 

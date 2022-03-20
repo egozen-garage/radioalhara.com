@@ -5,7 +5,11 @@
 
 body {
   background-color: black;
-  margin: var(--globalMarginValue);
+  /* margin: var(--globalMarginValue); */
+}
+
+#contentWrapper {
+  padding: var(--globalMarginValue) 0px 0px var(--globalMarginValue);
 }
 
 @media screen and (max-width: 1024px) {
