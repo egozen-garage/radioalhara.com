@@ -1,21 +1,21 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import ReactPlayer from "react-player";
 import sanityClient from "../../client";
 import { getFile } from "@sanity/asset-utils";
 // import imageUrlBuilder from "@sanity/image-url";
 
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import './videoBackground.css';
 
-// video testing links
-const privateFile = "http://trust.dialectica-machina.com/video/recordat28.gif.mp4";
-const youtubeLink = "https://www.youtube.com/watch?v=O0YYf2Xn7oA&ab_channel=thekinolibrary";
-// vimeo > styling not yet adjusted
-const vimeoLink = "https://vimeo.com/249086569";
+// // video testing links
+// const privateFile = "http://trust.dialectica-machina.com/video/recordat28.gif.mp4";
+// const youtubeLink = "https://www.youtube.com/watch?v=O0YYf2Xn7oA&ab_channel=thekinolibrary";
+// // vimeo > styling not yet adjusted
+// const vimeoLink = "https://vimeo.com/249086569";
 
-// bitmap testing links
-// const bitmapLink = "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1";
-// const bitmapLink = "./img/defaultBG.jpg";
+// // bitmap testing links
+// // const bitmapLink = "https://i0.wp.com/www.printmag.com/wp-content/uploads/2021/02/4cbe8d_f1ed2800a49649848102c68fc5a66e53mv2.gif?fit=476%2C280&ssl=1";
+// // const bitmapLink = "./img/defaultBG.jpg";
 const backgroundColor = "blue";
 
 function BackgroundImage(channelItem) {
