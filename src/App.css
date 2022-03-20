@@ -9,7 +9,7 @@ body {
 }
 
 #contentWrapper {
-  padding: var(--globalMarginValue) 0px 0px var(--globalMarginValue);
+  padding: var(--globalMarginValue) var(--globalMarginValue) 0px var(--globalMarginValue);
 }
 
 @media screen and (max-width: 1024px) {
