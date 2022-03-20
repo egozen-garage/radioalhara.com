@@ -45,14 +45,14 @@ export default function RadioChannel() {
                 />               
               )
           )}
-          {channelTtems && channelTtems.map(
+          {/* {channelTtems && channelTtems.map(
               (channelItem) => (
                 <ProgramContainer
                   channelItem={channelItem}
                   key={"programmContainer" + channelItem._id}
                 />
               )
-          )}
+          )} */}
           </div>
           {channelTtems && channelTtems.map(
               (channelItem) => (
