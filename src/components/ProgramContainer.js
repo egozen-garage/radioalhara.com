@@ -1,20 +1,45 @@
 import '../style/ProgramContainer.css'
+import {PortableText} from '@portabletext/react'
+
+
+const myPortableTextComponents = {
+    // types: {
+    //   image: ({value}) => <img src={value.imageUrl} />,
+    //   callToAction: ({value, isInline}) =>
+    //     isInline ? (
+    //       <a href={value.url}>{value.text}</a>
+    //     ) : (
+    //       <div className="callToAction">{value.text}</div>
+    //     ),
+    // },
+  
+    marks: {
+      link: ({children, value}) => {
+        const rel = !value.href.startsWith('/') ? 'noreferrer noopener' : undefined
+        return (
+          <a href={value.href} rel={rel}>
+            {children}
+          </a>
+        )
+      },
+    },
+  }
 
 export default function ProgramContainer(props){
     return(
-        <div className='programContainer'>
-          {/* <p>{props.channelItem.program}</p> */}
-          Today, Saturday, March 19 on Radio AlHara:
-
-          10:00 Funky Fresh Mornings with Funky Felonious 
-          12:00 Tropical Mist with Tana
-          13:00 An Hour of 
-          17:00 Assemblage #3 w/ NA'É
-          18:00 Edna Martinez
-          21:00 Bombart with Peter Harris and Mark Stewart 
-          22:00 Leila Moon
-          23:00 Motel Club 
-          00:00 ‘Round Midnight with Jack Pereskian
+        <div className="CollapsibleContainer">
+          <input id="event" class="toggle" type="checkbox"/>
+          <label for="event" class="collapsible">
+            <span> programme today 
+              <span id="arrow-right">&#8594;</span>
+              <span id="arrow-down">&#8600;</span>
+            </span>
+          </label>
+          <div className='programContainer'>
+            {/* {props.channelItem.program[0]} */}
+            <PortableText value={props.channelItem.program}
+                          components={myPortableTextComponents} />
+          </div>
         </div>
       )
 }

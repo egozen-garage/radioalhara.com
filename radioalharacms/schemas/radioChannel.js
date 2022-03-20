@@ -38,7 +38,10 @@ export default {
       {
         name: 'program',
         title: 'Program',
-        type: 'text',
+        // type: 'text',
+        type: 'array', 
+        description: `please add a line break after each end`,
+        of: [{type: 'block'}]
       },
       {
         name: 'backgroundMedium',
