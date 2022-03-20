@@ -24,7 +24,7 @@ function BackgroundImage(channelItem) {
     <div className="backgroundDiv">
       <div id="backgroundImage" style={{
       backgroundColor: {backgroundColor},
-      backgroundImage: `url(${channelItem.channelItem.bitmapLink},)`
+      backgroundImage: `url(${channelItem.channelItem.bitmapLink})`
       // background: `url("https://64.media.tumblr.com/00af5b5e3e6912a5e5a56e63231bf657/tumblr_na9invhkBl1tvgexko1_400.gifv")`
       }}></div>
     </div>
