@@ -37,11 +37,10 @@ export default Chat */
 
 export default function Chat(props) {
   const [loaded, setLoaded] = useState(false);
-  
   useEffect(() => {
     LoadTelegramScript(() => {
         setLoaded(true);
-      },"radioalhara/" + props.telegramChatID);
+      }, props.telegramChatID);
   });
   
   return <div id="Chat"></div>

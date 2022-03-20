@@ -4,47 +4,49 @@ import './player.css';
 
 export default function Player(props) {
 
-const playerJS = `
-    function runPlayer(){
-        rjq('#rjp-radiojar-player').radiojar('player', {
-            "streamName": "${props.radioJarID}", 
-            "enableUpdates": true,
-            "defaultImage": "img/radio-alhara-logo.svg",
-            "autoplay":false
-        });
-        rjq('#rjp-radiojar-player').off('rj-track-load-event');
-        rjq('#rjp-radiojar-player').on('rj-track-load-event', function(event, data) {
-            updateInfo(data);
-            if  (data.artist === "Unknown") {
-                    rjq('.rjp-trackinfo-container').show();
-                    rjq('#trackInfo').html('Radio alHara' + ' - ' + data.title + '')
-                } else if (data.title != "" || data.artist != "") {
-                    rjq('.rjp-trackinfo-container').show();
-                    rjq('#trackInfo').html(data.artist + ' - ' + data.title + '')
-                } else {
-                    rjq('.rjp-trackinfo-container').show();
-                rjq('#trackInfo').html('Radio alHara')
-                }
-        });
-    }
-    function updateInfo(data) {
-        if (data.thumb) {
-        rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
-        } else {
-        rjq('#rj-cover').html('')
+    const playerJS = `
+        function runPlayer(){
+            rjq('#rjp-radiojar-player').radiojar('player', {
+                "streamName": "${props.radioJarID}", 
+                "enableUpdates": true,
+                "defaultImage": "img/radio-alhara-logo.svg",
+                "autoplay":false
+            });
+            rjq('#rjp-radiojar-player').off('rj-track-load-event');
+            rjq('#rjp-radiojar-player').on('rj-track-load-event', function(event, data) {
+                updateInfo(data);
+                if  (data.artist === "Unknown") {
+                        rjq('.rjp-trackinfo-container').show();
+                        rjq('#trackInfo').html('Radio alHara' + ' - ' + data.title + '')
+                    } else if (data.title != "" || data.artist != "") {
+                        rjq('.rjp-trackinfo-container').show();
+                        rjq('#trackInfo').html(data.artist + ' - ' + data.title + '')
+                    } else {
+                        rjq('.rjp-trackinfo-container').show();
+                    rjq('#trackInfo').html('Radio alHara')
+                    }
+            });
         }
-    }
-    runPlayer();
-`;
+        function updateInfo(data) {
+            if (data.thumb) {
+            rjq('#rj-cover').html('<a href="#"><img src="' + data.thumb + '" alt="" title="" /></a>')
+            } else {
+            rjq('#rj-cover').html('')
+            }
+        }
+        runPlayer();
+    `;
 
     useEffect(() => {
+        console.log("Is it twice ? ? ?");
+
         const script = document.createElement('script');
         script.innerHTML = playerJS;
         document.body.appendChild(script);
         return () => { 
             document.body.removeChild(script); 
         }
-    }, [playerJS])
+    }, [])
 
     return (
         <div id="player" className="col-lg-12">

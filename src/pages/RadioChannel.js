@@ -20,8 +20,9 @@ export default function RadioChannel() {
       sanityClient.fetch(query)
           .then((data) => setChannelItems(data))
           .catch(console.error);
-      // console.log("test RADIO details: " + setCannels.title);
   }, [query]);
+
+  console.log("amout of array elements: ")
 
   
 
@@ -55,7 +56,10 @@ export default function RadioChannel() {
          )}
         {channelTtems && channelTtems.map(
             (channelItem) => (
-              <Player radioJarID={channelItem.radioJarID} key={channelItem.radioJarID + channelItem._id}/>
+              <div>
+                called twice ? ? ? 
+                <Player radioJarID={channelItem.radioJarID} key={channelItem.radioJarID + channelItem._id}/>               
+              </div>
             )
          )}
         {channelTtems && channelTtems.map(
