@@ -44,7 +44,7 @@ button {
 #player {
 	direction: ltr;
   position: sticky;
-  top: var(--globalMarginValue);
+  top: calc(var(--globalMarginValue) + 15px);
   /* padding-bottom: 20px; */
   padding-right: 0px;
   margin: 14px;
