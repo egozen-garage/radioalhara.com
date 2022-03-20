@@ -12,6 +12,7 @@ iframe > html > body.body_widget_discussion {
     background-color: transparent; 
     /* border: 1px solid white !important; */
     border-radius: 5px;
+    min-width: 300px !important;
 }
 
 #Chat {
