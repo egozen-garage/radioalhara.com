@@ -27,11 +27,19 @@ const myPortableTextComponents = {
 
 const ProgramText = (channelItem) => {
     return(
-        <div className='programContainer'>
-            <PortableText 
-                value={channelItem.channelItem.program}
-                components={myPortableTextComponents}
-            />
+        <div className="CollapsibleContainer">
+          <input id="event" className="toggle" type="checkbox"/>
+          <label htmlFor="event" className="collapsible">
+            <span> programme today 
+              <span id="arrow-right">&#8594;</span>
+              <span id="arrow-down">&#8600;</span>
+            </span>
+          </label>
+          <div className='programContainer'>
+            {/* {props.channelItem.program[0]} */}
+            <PortableText value={channelItem.channelItem.program}
+                          components={myPortableTextComponents} />
+          </div>
         </div>
       )
 }
