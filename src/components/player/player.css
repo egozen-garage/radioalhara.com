@@ -615,17 +615,24 @@ ul.icons-ul > li .icon-li {
 #rj-player .rjp-player-container .jp-pause {
   color: #ffffff;
   display: block;
-	width: 77px;
   text-align: left;
 	float: left;
 }
 
 .jp-play {
 	height: 67px;
+  width: 75px;
+  margin-top: 3px;
 }
 
 .jp-pause {
-  height: 0px;
+  height: auto;
+  width: 78px;
+  margin-left: -3px;
+}
+
+.icon-pause {
+  font-size: 30px;
 }
 
 #rj-player .rjp-player-container .jp-play:active,
@@ -766,7 +773,7 @@ ul.icons-ul > li .icon-li {
 }
 
 #rj-player .player-v3.player-medium .info {
-	width: 40%;
+	width: var(--contentWrapperWidth);
 	text-align: left;
 	padding: 18px;
 }
@@ -824,6 +831,7 @@ margin-left: 60px;
 }
 
 .stroke-solid {
+  height: auto;
   stroke-dashoffset: 300;
   stroke-dasharray: 300;
   -webkit-transition: stroke-dashoffset 1s ease, opacity 1s ease;
@@ -862,7 +870,7 @@ margin-left: 60px;
           transform: translateY(-50%) translateX(-50%);
 	color: #fff;
 	margin-left: 8px;
-
+  height: 75px;
 }
 
 

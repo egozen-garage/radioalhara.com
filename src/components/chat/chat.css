@@ -6,7 +6,7 @@ iframe > html > body.body_widget_discussion {
     margin-top: -40px;
     margin-left: 52px !important;
     margin-bottom: var(--globalMarginValue);
-    width: 40%;
+    width: var(--contentWrapperWidth);
     display: block;
     z-index: 100 !important;
     background-color: transparent; 
