@@ -12,7 +12,7 @@ const backgroundColor = "black";
 function BackgroundColor() {
   return (
     <div className="backgroundDiv">
-      <div id="backgroundImage" style={{ backgroundColor: {backgroundColor},}}></div>
+      {/* <div id="backgroundImage" style={{ backgroundColor: {backgroundColor},}}></div> */}
     </div>
   )
 };
@@ -27,6 +27,17 @@ function BackgroundImage(channelItem) {
     </div>
   )
 };
+// function BackgroundImageFile(channelItem) {
+//   const file = getFile(channelItem.channelItem.bitmapFile, sanityClient.config());
+//   return (
+//     <div className="backgroundDiv">
+//       <div id="backgroundImage" style={{
+//       backgroundColor: {backgroundColor},
+//       backgroundImage: `url(${file.asset.url})`
+//       }}></div>
+//     </div>
+//   )
+// };
 
 function BackgroundVideo(channelItem) {
   const file = getFile(channelItem.channelItem.videoFile, sanityClient.config());
@@ -53,7 +64,11 @@ export default function Background(props){
     } 
     if(props.channelItem.backgroundMedium === "bitmapLink" && props.channelItem.bitmapLink){
       return <BackgroundImage  channelItem={props.channelItem}/>
-    }else{
+    }
+    // if(props.channelItem.backgroundMedium === "bitmapFile" && props.channelItem.bitmapLink){
+    //   return <BackgroundImageFile  channelItem={props.channelItem}/>
+    // }
+    else{
       return <BackgroundColor/>
     }
   }
