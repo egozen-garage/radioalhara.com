@@ -6,7 +6,7 @@ import sanityClient from "../client";
 import Background from '../components/background/VideoBackground';
 import Chat from '../components/chat/Chat';
 import Player from '../components/player/Player';
-import ProgramContainer from '../components/ProgramContainer';
+// import ProgramContainer from '../components/ProgramContainer';
 
 
 

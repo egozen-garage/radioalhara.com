@@ -1,9 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // pages
-import AllChannels from './pages/AllChannels';
+// import AllChannels from './pages/AllChannels';
 import RadioChannel from './pages/RadioChannel';
 import { MetaTags } from "react-meta-tags";
-import ImageAssets from "./assets/img/logo192.svg";
+import ImageAssets from "./assets/img/logo192.svg"
 // import About from './pages/About';
 
 // styles
@@ -58,22 +58,14 @@ function App() {
         />
       </MetaTags>
 
-      <BrowserRouter>
-            {/* Header Area */}
-            {/* <div className="max-w-full">
-              <Header />
-            </div> */}
-            {/* Route Area */}
-            <Routes>
+
+      <BrowserRouter basename={'/palestine'}>
+            <Routes >
               {/* <Route element={<AllChannels/>} exact path="/" /> */}
-              {/* <Route element={<RadioChannel/>} path="/:slug" /> */}
               <Route element={<RadioChannel/>} path="/" />
+              {/* <Route element={<RadioChannel/>} path="/:slug" /> */}
               {/* <Route element={<About/>} path="/about" /> */}
             </Routes>
-            {/* Footer Area */}
-            {/* <div className="max-w-full">
-              <Footer />
-            </div> */}
         </BrowserRouter>
     </div>
   );

@@ -12,7 +12,7 @@ const backgroundColor = "black";
 function BackgroundColor() {
   return (
     <div className="backgroundDiv">
-      <div id="backgroundImage" style={{ backgroundColor: {backgroundColor},}}></div>
+      {/* <div id="backgroundImage" style={{ backgroundColor: {backgroundColor},}}></div> */}
     </div>
   )
 };
@@ -40,6 +40,17 @@ function BackgroundImage(channelItem) {
     </div>
   )
 };
+// function BackgroundImageFile(channelItem) {
+//   const file = getFile(channelItem.channelItem.bitmapFile, sanityClient.config());
+//   return (
+//     <div className="backgroundDiv">
+//       <div id="backgroundImage" style={{
+//       backgroundColor: {backgroundColor},
+//       backgroundImage: `url(${file.asset.url})`
+//       }}></div>
+//     </div>
+//   )
+// };
 
 function BackgroundVideo(channelItem) {
   const file = getFile(channelItem.channelItem.videoFile, sanityClient.config());
