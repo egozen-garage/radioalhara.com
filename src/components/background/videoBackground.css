@@ -33,6 +33,14 @@
     bottom:0px;
     left:0px;
 }
+
+.backgroundFile {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .reactVideoPlayerComponent{
     /* Make video to at least 100% wide and tall */
     min-width: 100%; 

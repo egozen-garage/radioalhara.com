@@ -77,7 +77,7 @@ export default {
       },
       {
         name: 'bitmapFile',
-        type: 'image',
+        type: 'file',
         title: 'Bitmap File',
         value: "bitmapFile",
         hidden: ({document}) => (document?.backgroundMedium != "bitmapFile")
