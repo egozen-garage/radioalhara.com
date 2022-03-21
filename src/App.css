@@ -10,7 +10,7 @@ body {
 }
 
 #contentWrapper {
-  padding: var(--globalMarginValue) var(--globalMarginValue) 0px var(--globalMarginValue);
+  margin: 0px var(--globalMarginValue) 0px var(--globalMarginValue);
   display: grid;
 }
 

@@ -40,6 +40,14 @@ button {
 #player {
 	direction: ltr;
   padding-right: 40px;
+  height: 100%;
+}
+
+#playerWrapper {
+  top: 0;
+  position: sticky;
+  position: -webkit-sticky;
+  padding-top: var(--globalMarginValue);
 }
 
 .about {
@@ -763,10 +771,7 @@ ul.icons-ul > li .icon-li {
 .col-lg-12 {
   /* overflow-x: hidden; */
 }
-.fixed-top {
-  top: 0;
-  position: sticky;
-}
+
 
 #rj-player .player-v3.player-medium .info {
 	width: auto;
