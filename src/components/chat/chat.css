@@ -4,7 +4,8 @@ iframe > html > body.body_widget_discussion {
 
 [id^='telegram-discussion'] {
     margin-top: -40px;
-    margin-left: 52px !important;
+    margin-left: 0px;
+    /* margin-left: 52px !important; */
     margin-bottom: var(--globalMarginValue);
     width: var(--contentWrapperWidth);
     display: block;
@@ -26,24 +27,24 @@ body.dark.body_widget_discussion{
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     [id^='telegram-discussion'] {
-        width: 75%;
-        margin-left: 47px !important;
+        /* width: 75%; */
+        /* margin-left: 47px !important; */ 
     }
 }
 
 @media screen and (max-width: 667px) {
     [id^='telegram-discussion'] {
-        width: 100%;
-        margin-left: 0px !important;
+        /* width: 100%; */
+        /* margin-left: 0px !important; */
     }
 }
 
 @media screen and (max-width: 400px) {
     [id^='telegram-discussion'] {
         margin-bottom: 0px;
-        margin-left: 0px !important;
+        /* margin-left: 0px !important; */
         margin-top: -40px;
     }
 }

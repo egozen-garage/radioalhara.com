@@ -15,17 +15,17 @@ function App() {
     <div className="App">
       <MetaTags>
         {/* <!-- HTML Meta Tags --> */}
-        <title>Radio alHara</title>
+        <title>Radio AlHara راديو الحارة</title>
         <meta
           name="description"
-          content="///// Hello World /////"
+          content="Radio AlHara راديو الحارة Music Broadcast to the World."
         />
 
         {/* <!-- Google / Search Engine Tags --> */}
-        <meta itemProp="name" content="Radio alHara" />
+        <meta itemProp="name" content="Radio AlHara" />
         <meta
           itemProp="description"
-          content="Radio alHara. 24/7 Online Music Broadcast to the World."
+          content="Radio AlHara راديو الحارة Music Broadcast to the World."
         />
         <meta
           itemProp="image"
@@ -35,10 +35,10 @@ function App() {
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content="https://www.radioalhara.net/" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Radio alHara" />
+        <meta property="og:title" content="Radio AlHara راديو الحارة " />
         <meta
           property="og:description"
-          content="Radio alHara. 24/7 Online Music Broadcast to the World."
+          content="Radio AlHara راديو الحارة Music Broadcast to the World."
         />
         <meta
           property="og:image"
@@ -47,10 +47,10 @@ function App() {
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Radio alHara" />
+        <meta name="twitter:title" content="Radio AlHara راديو الحارة " />
         <meta
           name="twitter:description"
-          content="Radio alHara. 24/7 Online Music Broadcast to the World."
+          content="Radio AlHara راديو الحارة Music Broadcast to the World."
         />
         <meta
           name="twitter:image"

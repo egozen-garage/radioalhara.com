@@ -1,7 +1,7 @@
 :root {
   --alharablack: black;
   --globalMarginValue: 80px;
-  --contentWrapperWidth: 35%;
+  --contentWrapperWidth: 40%;
 }
 
 body {
@@ -27,14 +27,22 @@ img {
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   :root {
     --globalMarginValue: 40px;
+    --contentWrapperWidth: 65%;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  :root {
+    --contentWrapperWidth: 100%;
   }
 }
 
 @media screen and (max-width: 450px) {
   :root {
     --globalMarginValue: 10px;
+    --contentWrapperWidth: 100%;
   }
 }

@@ -65,7 +65,7 @@ const PlayerHTML = (radioJarID) => {
                 <div className="player-v3 player-medium">
                     <div id="player_box" className="info">
                         <div className="rjp-trackinfo-container">
-                            <p id="radioAlhara" className="rjo-radioChannelName">Radio al Hara</p>
+                            <p id="radioAlhara" className="rjo-radioChannelName">Radio AlHara - راديو الحارة </p>
                             <p id="trackInfo" className="rjp-info"> </p>
                         </div>
                         <div id="rj-cover">
