@@ -58,13 +58,13 @@ function App() {
         />
       </MetaTags>
 
-
+      <RadioChannel/>
       <BrowserRouter basename={'/palestine'}>
             <Routes >
-              {/* <Route element={<AllChannels/>} exact path="/" /> */}
+              {/* <Route element={<AllChannels/>} exact path="/" />
               <Route element={<RadioChannel/>} path="/" />
-              {/* <Route element={<RadioChannel/>} path="/:slug" /> */}
-              {/* <Route element={<About/>} path="/about" /> */}
+              <Route element={<RadioChannel/>} path="/:slug" />
+              <Route element={<About/>} path="/about" /> */}
             </Routes>
         </BrowserRouter>
     </div>
