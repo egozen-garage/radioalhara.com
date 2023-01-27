@@ -29,7 +29,7 @@ export default {
         name: 'timezone',
         title: 'Timezone of Location in Player',
         type: 'string',
-        description: "e.g. Asia/Gaza or Europe/Berlin"
+        description: "Example: Asia/Gaza or Europe/Berlin"
       },
       {
         name: 'description',
