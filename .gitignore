@@ -12,6 +12,9 @@ node_modules
 # production
 /build
 
+#folder
+.vscode
+
 # misc
 .DS_Store
 .env.local

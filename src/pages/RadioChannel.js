@@ -42,6 +42,8 @@ export default function RadioChannel() {
                 <Player 
                   radioJarID={channelItem.radioJarID} 
                   key={"playerContainer" + channelItem._id}
+                  locationPlayer={channelItem.locationPlayer}
+                  timezone={channelItem.timezone}
                 />               
               )
           )}

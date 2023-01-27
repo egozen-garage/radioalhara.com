@@ -21,6 +21,17 @@ export default {
         }
       },
       {
+        name: 'locationPlayer',
+        title: 'Location in Player',
+        type: 'string',
+      },
+      {
+        name: 'timezone',
+        title: 'Timezone of Location in Player',
+        type: 'string',
+        description: "e.g. Asia/Gaza or Europe/Berlin"
+      },
+      {
         name: 'description',
         title: 'Description',
         type: 'text',
