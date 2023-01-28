@@ -78,7 +78,7 @@ const PlayerHTML = (props) => {
         return () => { 
             document.body.removeChild(script); 
         }
-    }, [])
+    })
     return(
         <div id="player" className="col-lg-12">
             <div id="rj-player" className="fixed-top">

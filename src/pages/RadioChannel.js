@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import sanityClient from "../client";
 
 // components
@@ -12,10 +12,10 @@ import Player from '../components/player/Player';
 
 export default function RadioChannel() {
   const [channelTtems, setChannelItems] = useState(null);
-  const { slug } = useParams();
-
+  
   // Performing queries
   // Backup for slug routing:
+  // const { slug } = useParams();
   // const query = `*[ _type == "radioChannel" && slug.current match "${slug}" && !(_id in path("drafts.**"))]`
   const query = `*[ _type == "radioChannel" && slug.current match "palestine" && !(_id in path("drafts.**"))]`
 

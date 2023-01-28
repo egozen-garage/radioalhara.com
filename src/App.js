@@ -2,7 +2,7 @@
 // pages
 // import AllChannels from './pages/AllChannels';
 import RadioChannel from './pages/RadioChannel';
-import { MetaTags } from "react-meta-tags";
+// import { MetaTags } from "react-meta-tags";
 import ImageAssets from "./assets/img/logo192.svg"
 // import About from './pages/About';
 
@@ -13,7 +13,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <MetaTags>
+      {/* <MetaTags> */}
+        <head>
         {/* <!-- HTML Meta Tags --> */}
         <title>Radio AlHara راديو الحارة</title>
         <meta
@@ -56,7 +57,8 @@ function App() {
           name="twitter:image"
           content= {ImageAssets}
         />
-      </MetaTags>
+        </head>
+      {/* </MetaTags> */}
 
       <RadioChannel/>
       {/* <BrowserRouter basename={'/palestine'}>
