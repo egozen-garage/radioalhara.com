@@ -21,22 +21,22 @@ export default function Player(props) {
 const PlayerHTML = (props) => {
     const ID = props.radioJarID;
     const location = props.locationPlayer;
-    const timezone = props.timezone;
-
-    // update time
-    const locale = 'en';
-    const [today, setDate] = React.useState(new Date()); // Save the current date to be able to trigger an update
-    React.useEffect(() => {
-        const timer = setInterval(() => { // Creates an interval which will update the current data every minute
-        // This will trigger a rerender every component that uses the useDate hook.
-        setDate(new Date());
-      }, 60 * 1000);
-      return () => {
-        clearInterval(timer); // Return a funtion to clear the timer so that it will stop being called on unmount
-      }
-    }, []);
-    const now = today.toLocaleTimeString(locale, {timeZone: timezone, hour: 'numeric', hour12: true, minute: 'numeric' });
-    // const now = today.toLocaleTimeString(locale, {timeZone: "Europe/Berlin", hour: 'numeric', hour12: true, minute: 'numeric' });
+    
+    // const timezone = props.timezone;
+    // // update time
+    // const locale = 'en';
+    // const [today, setDate] = React.useState(new Date()); // Save the current date to be able to trigger an update
+    // React.useEffect(() => {
+    //     const timer = setInterval(() => { // Creates an interval which will update the current data every minute
+    //     // This will trigger a rerender every component that uses the useDate hook.
+    //     setDate(new Date());
+    //   }, 60 * 1000);
+    //   return () => {
+    //     clearInterval(timer); // Return a funtion to clear the timer so that it will stop being called on unmount
+    //   }
+    // }, []);
+    // const now = today.toLocaleTimeString(locale, {timeZone: timezone, hour: 'numeric', hour12: true, minute: 'numeric' });
+    // // const now = today.toLocaleTimeString(locale, {timeZone: "Europe/Berlin", hour: 'numeric', hour12: true, minute: 'numeric' });
 
     const playerJS = `
         function runPlayer(){
@@ -109,7 +109,7 @@ const PlayerHTML = (props) => {
                             </div>
 
                             <div className="live-broadcasting">
-                                <div className="live"></div><span> {location} {now}</span><span className="clock"></span></div>
+                                <div className="live"></div><span> {location}</span><span className="clock"></span></div>
                                 {/* <div className="live"></div><span> Bethlehem</span><span className="clock"></span></div> */}
 
                             <div id="volume_controll" className="jp-volume-bar-wrapper">
